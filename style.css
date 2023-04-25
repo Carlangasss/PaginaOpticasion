@@ -1,0 +1,267 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para Box Model **/
+    scroll-snap-type: y mandatory;
+}
+body {
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.contenedor-header{
+    
+}
+
+.contenerdor-hijo1{
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.a{
+    background-color: transparent;
+}
+
+.divLogo{
+    display: flex;
+    align-items: center;
+    height: 200px;
+    width: 400px;
+    background-color: transparent;
+    margin-left: 100px;
+}
+
+.logo{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.redes{
+    background-color: transparent;
+    margin-right: 50px;
+}
+
+.redes a{
+    background-color: transparent;
+    margin: 10px;
+}
+
+.inst_img{
+    width: 70px;
+    background-color: transparent;
+}
+.whtsp_img{
+    width: 70px;
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+.contenedor-hijo2{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.items{
+    margin-left: 150px;
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    background-color: lightcyan; /*aquiiiii borrar*/
+}
+
+.item-padre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.item-padre1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.li{
+    background-color: transparent;
+}
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: transparent;
+}
+
+.menu-horizontal > li > a{
+    display: blocks;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 2.5rem;
+    
+}
+
+.menu-horizontal .item-padre1:hover{
+    background-color: rgba(44, 145, 179, 0.562);
+    border-radius: 5px;
+}
+
+.menu-horizontal .item-padre:hover{
+    background-color: lightgray;
+    border-radius: 20px;
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    border-radius: 10px;
+    height: 400px;
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-vertical  .div-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: transparent;
+    margin-left: 15px;
+}
+
+.menu-vertical .div-item > li{
+    margin-top: 25px;
+    width: 100%;
+}
+
+.menu-vertical li:hover .img10{
+    display: none;
+}
+
+.menu-vertical li:hover{
+    background-color: rgba(80, 80, 80, 0.253);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.menu-vertical > div > li > a{
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 30px;
+    margin-left: 20px;
+} 
+
+.div-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 30%;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.img-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+.menu-vertical
+
+.contenerdor-hijo3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background-color: transparent;
+    height: 100px;
+    background-color: lightblue;
+}
+.info > h2{
+    margin-top: 30px;
+}
+
+.contenedor-hijo4{
+    height: 1000px;
+    background-image: url(img/fondo1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-hijo4 > div{
+    margin-left: 100px;
+    margin-top: 100px;
+
+}
+
+.texto-en-imagen{
+    margin-left: 60px;
+    margin-top: 70px;
+    font-family: sans-serif;
+    font-size: 5rem;
+    color: rgb(0, 0, 0);
+}
+
+.texto-of{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    background-image: url(img/imagen-barra1.jpg);
+    background-size: contain;
+}
+
+.texto-of > h1{
+    font-size: 9rem;
+    font-family: sans-serif;
+    color: lightseagreen;
+}
+
+
+/* EFECTOS MENÚ DESPLEGABLE*/
+
+.item-hijo:hover .img-item > img{
+    display: none;
+
+}
+
+.li-v-1:hover .info{
+    font-size: 300px;
+    color: lightcoral;
+}
